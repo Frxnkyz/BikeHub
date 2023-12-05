@@ -10,6 +10,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* font-family: 'Bebas Neue', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /* font-family: 'Montserrat', sans-serif;*/
 
+/**************************************GENERAL ******************************/
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
 
 /**************************************HERO SECTION******************************/
 
@@ -44,9 +54,7 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
-            
 
-            
 /**************************************Wrapper******************************/
 
 
@@ -86,7 +94,27 @@ nav a:hover {
     color: white;
 }
 /**************************************H******************************/
-#h{
+#hTipo{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+#hMarcas{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+#hCircuitos{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+#hCC{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+#hGaleria{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;

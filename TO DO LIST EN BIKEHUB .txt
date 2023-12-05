@@ -1,15 +1,15 @@
 TO DO LIST EN BIKEHUB 
-Tipos de moto 
+Tipos de moto -fotos buscadas-
 	Enduro/cross
-	SM 
-	R
+	SuperMotard
+	Deportivas
 	Naked
-	trail
-Marcas 
+	Trail
+Marcas - fotos buscadas - 
 	Yamaha
 	Ducati
 	Kawasaki
-	Aprilia
+	Honda
 	BMW
 Circuitos 
 	Barcelona 
@@ -22,7 +22,7 @@ ISLE OF MAN TT
 	CATEGORIAS 	
 	"LA CARRERA MAS PELIGROSA DEL MUNDO " 
 
-Creadores de Contenido
+Creadores de Contenido -fotos buscadas-
 	MAJES
 	ALVAROSLIDE
 	SOYBLACK09
@@ -33,5 +33,6 @@ GALERIA
 	MARC MARQUEZ CON DUCATI 
 	SM HACIENDO CABALLITO 
 	Enduro 
+	
 	
 	
