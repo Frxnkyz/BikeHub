@@ -60,21 +60,223 @@ nav a:hover {
 
 /**************************************Body******************************/
 #body{
-    background-color: black;
+background-color: black;
+
+
 }
-/**************************************Columnas******************************/
+/**************************************Columnas y boton de las secciones ******************************/
+
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    transition: box-shadow 0.3s ease;
+    color:white;
+}
+.imagen {
+    flex: 1;
+    padding: 20px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenido {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #ffa500;
+    color: #ffa500;
+    text-decoration: none;
+    
+}
+
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+button:hover span {
+    color: black;
+}
+
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+    
+}
+.contenedor:hover {
+    box-shadow: 0 0 10px #ffa500;
+    
+}
+#linkinfo{
+    text-decoration: none;
+}
+
+/*****************************MARCAS*********************************/
+
+.seccion {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
 
 
+.espacio {
+    flex: 1;
+    max-width: calc(20% - 20px); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
 
 
+.card {
+    width: 100%;
+    
+}
+
+.card img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
 
 
+/************************************Circuitos*********/
+.containercircuito {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+  }
+.columnascircuito {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.columnacircuito {
+    flex: 1;
+    min-width: 0;
+}
 
-
-
-
-
+.cardcircuito {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px ; 
+}
+.circuito{
+position: relative;
+width: 300px;
+height: 350px;
+}
+.circuito .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow:hidden ;
+    transition: .5s;
+}
+.circuito .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #ffa500;
+}
+.circuito .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.circuito .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: rgba(0, 0,0,.4);
+    text-align: center;
+}
+.circuito .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: black;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #ffa500;
+}
+.circuito .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.circuito .back .link a {
+    color: #f3f3f3;
+}
+.circuito .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.circuito .back #pcircuito{
+    letter-spacing: 1px;
+}
+.circuito:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.circuito:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
 
 
 
@@ -110,7 +312,7 @@ nav a:hover {
     text-align: center;
     color: white;
 }
-/**************************************H******************************/
+/**************************************H y parrafos******************************/
 #hTipo{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
@@ -126,6 +328,11 @@ nav a:hover {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
+#hTT{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
 #hCC{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
@@ -136,6 +343,13 @@ nav a:hover {
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
 }
+#h2{
+    font-family:'Bebas Neue' ;
+}
+#parrafos{
+    color:white ;
+    font-family: 'Montserrat'; 
+}
 /**************************************Responsive******************************/
 @media screen and (max-width:800px) {
     .footer .grupo1{
@@ -143,5 +357,33 @@ nav a:hover {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+}
+@media (max-width: 768px) {
+    .contenedor {
+    flex-direction: column;
+    align-items: stretch;
+    }
+
+    .imagen,
+    .contenido {
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .espacio {
+    max-width: calc(50% - 20px); 
+    }
+}
+@media (max-width: 768px) {
+    .columnacircuito {
+    flex: 0 0 100%; 
+    max-width: 100%;
     }
 }
