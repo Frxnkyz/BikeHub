@@ -161,6 +161,9 @@ button:hover::before {
 /*****************************MARCAS*********************************/
 
 .seccion {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; 
@@ -279,8 +282,52 @@ height: 350px;
 }
 
 
+/*******************Creadores de Contenido**************************/
+.containerCC {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    max-width: 1600px;
+    margin: auto;
+}
 
+.boxCC {
+    width: 100%; 
+    max-width: 400px; 
+    flex: 1 1 30%; 
+    position: relative;
+    overflow: hidden;
+    margin: 2%;
+    border: 3px solid #ffa500;
+    border-radius: 20px;
+}
 
+.boxCC img {
+    width: 100%;
+    height: auto;
+}
+
+.capaCC {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: scale(0);
+    transition: .3s ease;
+}
+
+.boxCC:hover .capaCC {
+    transform: scale(1);
+    
+}
 /**************************************Footer******************************/
 .footer{
     width: 100%;
@@ -312,7 +359,7 @@ height: 350px;
     text-align: center;
     color: white;
 }
-/**************************************H y parrafos******************************/
+/**************************************Link , H y parrafos******************************/
 #hTipo{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
@@ -349,6 +396,9 @@ height: 350px;
 #parrafos{
     color:white ;
     font-family: 'Montserrat'; 
+}
+.linkG{
+    color:#ffa500;
 }
 /**************************************Responsive******************************/
 @media screen and (max-width:800px) {
