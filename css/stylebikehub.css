@@ -407,6 +407,9 @@ height: 350px;
 .footer .barrafooter a{
     color:white; 
 }
+#creditos{
+    color : white ; 
+}
 /**************************************Link , H y parrafos******************************/
 #hTipo{
     color: white;
@@ -443,6 +446,7 @@ height: 350px;
 .linkG{
     color:#ffa500;
 }
+
 /**************************************Responsive******************************/
 @media screen and (max-width:800px) {
     .footer .grupo1{
